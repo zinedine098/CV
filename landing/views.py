@@ -1,5 +1,9 @@
 from django.shortcuts import render
 
 # Create your views here.
-def landing_page(request):
-    return render(request, 'landing/landing.html')
+def home(request):
+    return render(request, 'landing/home.html')
+def about(request):
+    return render(request, 'landing/about.html')
+def course(request):
+    return render(request, 'landing/course.html')

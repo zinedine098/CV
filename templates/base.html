@@ -49,9 +49,9 @@
 
     <nav id="navmenu" class="navmenu">
     <ul>
-        <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="courses.html">Courses</a></li>
+        <li><a href="{% url 'home' %}" class="active">Home</a></li>
+        <li><a href="{% url 'about' %}">About</a></li>
+        <li><a href="{% url 'course' %}">Courses</a></li>
         <li><a href="instructors.html">Instructors</a></li>
         <li><a href="pricing.html">Pricing</a></li>
         <li><a href="blog.html">Blog</a></li>
