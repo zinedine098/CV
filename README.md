@@ -1,127 +1,127 @@
-# Online Course Platform
+# Platform Kursus Online
 
-Welcome to the Online Course Platform - a comprehensive Django-based web application designed to deliver online education with a focus on user experience and course management.
+Selamat datang di Platform Kursus Online - sebuah aplikasi web berbasis Django yang komprehensif yang dirancang untuk menyediakan pendidikan online dengan fokus pada pengalaman pengguna dan manajemen kursus.
 
-## Project Overview
+## Gambaran Proyek
 
-This project is an online learning platform built with Django that allows students to browse courses, connect with instructors, and access educational content. The platform features a responsive design with modern UI elements and comprehensive course management capabilities.
+Proyek ini merupakan platform pembelajaran online yang dibangun dengan Django yang memungkinkan siswa untuk menelusuri kursus, terhubung dengan instruktur, dan mengakses konten pendidikan. Platform ini memiliki desain responsif dengan elemen UI modern dan kemampuan manajemen kursus yang komprehensif.
 
-## Current Progress & Features
+## Kemajuan & Fitur Saat Ini
 
-### Core Structure
-- **Django Project**: Built with Django 5.2.8
-- **Database**: SQLite3 for development
-- **Template System**: Django templating with base.html inheritance
-- **Static Files**: Comprehensive asset management with Bootstrap-based design
+### Struktur Inti
+- **Django Project**: Dibangun dengan Django 5.2.8
+- **Database**: SQLite3 untuk pengembangan
+- **Sistem Template**: Template Django dengan inheritance base.html
+- **File Statis**: Manajemen aset komprehensif dengan desain berbasis Bootstrap
 
-### UI & Design
-- **Responsive Layout**: Mobile-first design using Bootstrap 5.3.7
-- **Modern Template**: "Learner" template with professional aesthetics
-- **Static Assets**: CSS, JavaScript, images, and vendor libraries properly organized
-- **Frontend Framework**: Bootstrap with custom CSS and JavaScript functionality
+### UI & Desain
+- **Tata Letak Responsif**: Desain berbasis mobile menggunakan Bootstrap 5.3.7
+- **Template Modern**: Template "Learner" dengan estetika profesional
+- **Aset Statis**: CSS, JavaScript, gambar, dan pustaka vendor diatur dengan baik
+- **Framework Frontend**: Bootstrap dengan CSS dan fungsionalitas JavaScript kustom
 
-### Landing Page Features
-- **Hero Section**: Engaging introduction with statistics and call-to-action buttons
-- **Featured Courses**: Display of courses with details (level, duration, instructor, ratings)
-- **Course Categories**: Comprehensive categorization with 18+ subject areas
-- **Featured Instructors**: Professional profiles with ratings and course counts
-- **Testimonials**: Student feedback system with rating display
-- **Blog Section**: Recent posts with author information
-- **Call-to-Action**: Enrollment section with key statistics
+### Fitur Halaman Depan
+- **Bagian Hero**: Perkenalan menarik dengan statistik dan tombol aksi
+- **Kursus Unggulan**: Tampilan kursus dengan detail (tingkat kesulitan, durasi, instruktur, peringkat)
+- **Kategori Kursus**: Kategorisasi komprehensif dengan lebih dari 18 bidang studi
+- **Instruktur Unggulan**: Profil profesional dengan peringkat dan jumlah kursus
+- **Testimoni**: Sistem umpan balik siswa dengan tampilan peringkat
+- **Bagian Blog**: Postingan terbaru dengan informasi penulis
+- **Ajakan Bertindak**: Bagian pendaftaran dengan statistik kunci
 
-### Navigation & User Experience
-- **Main Navigation**: Complete menu with Home, About, Courses, Instructors, Pricing, Blog
-- **Dropdown Menus**: Extended navigation options for detailed content access
-- **Responsive Design**: Mobile navigation toggle and responsive layouts
-- **Social Media Integration**: Links to Twitter, Facebook, Instagram, LinkedIn
+### Navigasi & Pengalaman Pengguna
+- **Navigasi Utama**: Menu lengkap dengan Kursus, Tentang, Instruktur, Harga, Blog
+- **Menu Dropdown**: Opsi navigasi yang diperluas untuk akses konten terperinci
+- **Desain Responsif**: Toggle navigasi mobile dan tata letak responsif
+- **Integrasi Media Sosial**: Tautan ke Twitter, Facebook, Instagram, LinkedIn
 
-### Functionality Implemented
-- **URL Routing**: Clean URL structure with Django URL patterns
-- **View System**: Basic view implementation for landing page
-- **Template Inheritance**: Base template with block structure for content
-- **Static File Management**: Proper Django static file handling
+### Fungsionalitas yang Diimplementasikan
+- **Routing URL**: Struktur URL yang bersih dengan pola URL Django
+- **Sistem View**: Implementasi view dasar untuk halaman depan
+- **Inheritance Template**: Template dasar dengan struktur blok untuk konten
+- **Manajemen File Statis**: Penanganan file statis Django yang tepat
 
-### Technology Stack
+### Teknologi yang Digunakan
 - **Backend**: Django 5.2.8
-- **Frontend**: HTML5, CSS3, JavaScript with Bootstrap 5
+- **Frontend**: HTML5, CSS3, JavaScript dengan Bootstrap 5
 - **Database**: SQLite3
 - **Template Engine**: Django Templates
-- **CSS Framework**: Bootstrap with custom styling
-- **JavaScript Libraries**: AOS, Swiper, PureCounter for interactive elements
+- **Framework CSS**: Bootstrap dengan styling kustom
+- **Pustaka JavaScript**: AOS, Swiper, PureCounter untuk elemen interaktif
 
-### Course Management Features
-- **Course Categories**: 18+ categories including Computer Science, Business, Design, Health, Languages, etc.
-- **Course Display**: Detailed course cards with pricing, difficulty level, duration, and instructor information
-- **Rating System**: Visual star ratings and numerical scores
-- **Student Statistics**: Enrollment data and success metrics
+### Fitur Manajemen Kursus
+- **Kategori Kursus**: Lebih dari 18 kategori termasuk Ilmu Komputer, Bisnis, Desain, Kesehatan, Bahasa, dll.
+- **Penampilan Kursus**: Kartu kursus terperinci dengan harga, tingkat kesulitan, durasi, dan informasi instruktur
+- **Sistem Peringkat**: Peringkat bintang visual dan skor numerik
+- **Statistik Siswa**: Data pendaftaran dan metrik keberhasilan
 
-### Instructor Management
-- **Instructor Profiles**: Detailed profiles with specialties, ratings, and course counts
-- **Social Media Integration**: Links to instructor professional networks
-- **Performance Metrics**: Student counts and rating displays
+### Manajemen Instruktur
+- **Profil Instruktur**: Profil terperinci dengan spesialisasi, peringkat, dan jumlah kursus
+- **Integrasi Media Sosial**: Tautan ke jaringan profesional instruktur
+- **Metrik Kinerja**: Jumlah siswa dan tampilan peringkat
 
-## Application Structure
+## Struktur Aplikasi
 
 ```
 online_course/
-├── config/                 # Django project settings
-│   ├── settings.py         # Project configuration
-│   ├── urls.py            # Main URL routing
-│   └── wsgi.py            # WSGI application
-├── landing/               # Main application
-│   ├── views.py           # View functions
-│   ├── urls.py            # App-specific URLs
-│   ├── models.py          # Database models (empty for now)
-│   └── admin.py           # Admin interface configuration
-├── templates/             # HTML templates
-│   ├── base.html          # Base template with layout
-│   └── landing/           # Landing page templates
-├── static/                # Static assets
-│   └── assets/            # CSS, JS, images, vendors
-└── db.sqlite3             # Database file
+├── config/                 # Pengaturan proyek Django
+│   ├── settings.py         # Konfigurasi proyek
+│   ├── urls.py            # Routing URL utama
+│   └── wsgi.py            # Aplikasi WSGI
+├── landing/               # Aplikasi utama
+│   ├── views.py           # Fungsi view
+│   ├── urls.py            # URL khusus aplikasi
+│   ├── models.py          # Model database (kosong untuk saat ini)
+│   └── admin.py           # Konfigurasi antarmuka admin
+├── templates/             # Template HTML
+│   ├── base.html          # Template dasar dengan tata letak
+│   └── landing/           # Template halaman depan
+├── static/                # Aset statis
+│   └── assets/            # CSS, JS, gambar, vendor
+└── db.sqlite3             # File database
 ```
 
-## Current Status
+## Status Saat Ini
 
-✅ **Completed Components:**
-- Basic Django project structure
-- Landing page with full UI implementation
-- Responsive design and mobile compatibility
-- Static file management
-- URL routing configuration
-- Template inheritance system
+✅ **Komponen yang Telah Selesai:**
+- Struktur proyek Django dasar
+- Halaman depan dengan implementasi UI lengkap
+- Desain responsif dan kompatibilitas mobile
+- Manajemen file statis
+- Konfigurasi routing URL
+- Sistem inheritance template
 
-🔄 **In Progress:**
-- Database model development
-- User authentication system
-- Course enrollment functionality
-- Instructor portal
-- Student dashboard
+🔄 **Sedang Dalam Proses:**
+- Pengembangan model database
+- Sistem otentikasi pengguna
+- Fungsionalitas pendaftaran kursus
+- Portal instruktur
+- Dashboard siswa
 
-## Future Development
+## Pengembangan Mendatang
 
- Planned Features:
-- User authentication and authorization
-- Course enrollment system
-- Payment integration
-- Student progress tracking
-- Instructor dashboard
-- Content management system
-- Interactive learning materials
-- Video streaming capabilities
-- Discussion forums
-- Quiz and assessment tools
+ Fitur yang DIRENCANAKAN:
+- Otentikasi dan otorisasi pengguna
+- Sistem pendaftaran kursus
+- Integrasi pembayaran
+- Pelacakan kemajuan siswa
+- Dashboard instruktur
+- Sistem manajemen konten
+- Materi pembelajaran interaktif
+- Kemampuan streaming video
+- Forum diskusi
+- Alat kuis dan penilaian
 
-## Setup Instructions
+## Petunjuk Instalasi
 
-1. Clone the repository
-2. Create virtual environment: `python -m venv venv`
-3. Activate virtual environment: `source venv/bin/activate` (Linux/Mac) or `venv\Scripts\activate` (Windows)
-4. Install dependencies: `pip install django`
-5. Run migrations: `python manage.py migrate`
-6. Start development server: `python manage.py runserver`
-7. Visit `http://127.0.0.1:8000/` to view the application
+1. Clone repositori ini
+2. Buat lingkungan virtual: `python -m venv venv`
+3. Aktifkan lingkungan virtual: `source venv/bin/activate` (Linux/Mac) atau `venv\Scripts\activate` (Windows)
+4. Instal dependensi: `pip install django`
+5. Jalankan migrasi: `python manage.py migrate`
+6. Mulai server pengembangan: `python manage.py runserver`
+7. Kunjungi `http://127.0.0.1:8000/` untuk melihat aplikasi
 
-## Contributing
+## Kontribusi
 
-We welcome contributions to enhance the functionality and features of this online course platform. Please feel free to submit pull requests or create issues for bugs and feature requests.
+Kami menyambut kontribusi untuk meningkatkan fungsionalitas dan fitur platform kursus online ini. Silakan kirim pull request atau buat issue untuk bug dan permintaan fitur.
